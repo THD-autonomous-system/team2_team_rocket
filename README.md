@@ -3,3 +3,7 @@
 gauravsharma0509@gmail.com
 
 # Team_members- Kirtan Soni, Gaurav Sharma, Wen-Hao Wu(Vance), Kemal
+
+Update: 15.Nov.2022
+1. uploaded simulation maps
+2. uploaded physical scan maps
