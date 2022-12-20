@@ -7,5 +7,3 @@ Steps:
 4) Go close to that wall
 5) Follow that wall
 6) Navigate to different rooms
-
-![Screenshot from 2022-12-13 14-03-15](screenshot/Screenshot from 2022-12-13 14-03-15.png)
