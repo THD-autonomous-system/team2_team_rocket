@@ -32,12 +32,22 @@ def callback(msg):
     global DIR
 
     ranges = msg.ranges
-    front_list = ranges[345:360] + ranges[0:15]
+    radar_len=len(ranges)
+
+    front_list = ranges[int(345*radar_len/360):radar_len] #+ ranges[0:int(15*radar_len/360)]
+    front_list = front_list.remove(0.0)
+    left_list = ranges[int(70*radar_len/360):int(90*radar_len/360)]
+    left_list = left_list.remove(0.0)
+    right_list = ranges[int(270*radar_len/360):int(290*radar_len/360)]
+    right_list = right_list.remove(0.0)
+    print(type(front_list))
     DIR = {
-    'left': min(ranges[70:90]),
+    'left': min(left_list),
     'front': min(front_list), 
-    'right': min(ranges[270:290]),
+    'right': min(right_list),
 }
+
+    print(front_list)
     movement()
 
 
@@ -45,7 +55,7 @@ def movement():
     global follow_dir, state
 
     b = 1  # maximum threshold distance
-    a = 0.5  # minimum threshold distance
+    a = 0.1  # minimum threshold distance
     velocity = Twist()  # Odometry call for velocity
     linear_x = 0  # Odometry message for linear velocity will be called here.
     angular_z = 0  # Odometry message for angular velocity will be called here.

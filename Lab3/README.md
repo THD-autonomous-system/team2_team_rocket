@@ -8,4 +8,6 @@ Steps:
 5) Follow that wall
 6) Navigate to different rooms
 
-![Screenshot from 2022-12-13 14-03-15](screenshot/Screenshot from 2022-12-13 14-03-15.png)
+Update: 20.Dec.2022:
+1) updated the code (v2) by changing the range values as per turtlebot3
+2) added screenshot of new code.
